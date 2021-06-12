@@ -64,7 +64,7 @@ class Fabrica():
 
 ziua1=Fabrica(314,90)
 
-with open("fisout.txt","w") as fis:
+with open("../Probl_test/fisout.txt", "w") as fis:
     for x in ziua1:
         fis.write(str(x)+" ")
 
