@@ -70,8 +70,9 @@ class Factory():
             #result.append((name,v[1]-v[0]))
         return FactoryItter(result)
 
-    def addstarttime(self,name:str,start_time:datetime):
+    def addstarttime(self,name:str,hour:int , min:int,sec:int):
         """methoddoc"""
+        timp=datetime.datetime()
         if name not in self.all_workers.keys():
             self.all_workers[name]=[0,0]
         else:
